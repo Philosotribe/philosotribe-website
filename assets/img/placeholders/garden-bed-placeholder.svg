@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder garden bed illustration</title>
+  <desc id="desc">Raised garden beds with rows of leafy plants.</desc>
+  <rect width="1000" height="700" fill="#f8ead0"/>
+  <path d="M0 460c121-44 248-56 360-20 107 34 183 41 304 2 136-43 236-28 336 26v232H0Z" fill="#6f7c53"/>
+  <path d="M170 205h660l78 274H92Z" fill="#5f432f"/>
+  <path d="M225 260h550l42 152H183Z" fill="#34281d" opacity=".58"/>
+  <g fill="#8a9864">
+    <ellipse cx="255" cy="320" rx="48" ry="22"/>
+    <ellipse cx="365" cy="320" rx="48" ry="22"/>
+    <ellipse cx="475" cy="320" rx="48" ry="22"/>
+    <ellipse cx="585" cy="320" rx="48" ry="22"/>
+    <ellipse cx="695" cy="320" rx="48" ry="22"/>
+    <ellipse cx="310" cy="380" rx="48" ry="22"/>
+    <ellipse cx="420" cy="380" rx="48" ry="22"/>
+    <ellipse cx="530" cy="380" rx="48" ry="22"/>
+    <ellipse cx="640" cy="380" rx="48" ry="22"/>
+    <ellipse cx="750" cy="380" rx="48" ry="22"/>
+  </g>
+  <path d="M150 500h700" stroke="#d7bd8a" stroke-width="28" stroke-linecap="round"/>
+  <text x="500" y="625" text-anchor="middle" fill="#34281d" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="0">PLACEHOLDER IMAGE</text>
+</svg>

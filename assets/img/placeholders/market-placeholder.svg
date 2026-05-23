@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder family market table illustration</title>
+  <desc id="desc">A small market table with handmade goods and plants.</desc>
+  <rect width="1200" height="900" fill="#f8ead0"/>
+  <path d="M0 250h1200v420H0Z" fill="#d7bd8a" opacity=".45"/>
+  <path d="M170 265h860l-95 150H265Z" fill="#a7603d"/>
+  <path d="M265 415h670v88H265Z" fill="#34281d"/>
+  <path d="M320 503h560v235H320Z" fill="#5f432f"/>
+  <path d="M365 544h120v120H365Zm174 0h120v120H539Zm174 0h120v120H713Z" fill="#f5efe2" opacity=".86"/>
+  <circle cx="425" cy="604" r="34" fill="#6f7c53"/>
+  <circle cx="599" cy="604" r="34" fill="#a7603d"/>
+  <circle cx="773" cy="604" r="34" fill="#344c33"/>
+  <g fill="#344c33">
+    <path d="M286 500c-44-85-5-151 93-204 74 63 90 130 48 204Z"/>
+    <path d="M914 500c-44-85-5-151 93-204 74 63 90 130 48 204Z"/>
+  </g>
+  <path d="M0 710c156-60 285-58 446-9 110 33 218 29 346-12 157-50 281-31 408 29v182H0Z" fill="#6f7c53"/>
+  <text x="600" y="820" text-anchor="middle" fill="#34281d" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="0">PLACEHOLDER IMAGE</text>
+</svg>

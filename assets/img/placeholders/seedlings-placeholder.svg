@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder seedling trays illustration</title>
+  <desc id="desc">Seedling trays and hand tools in muted earthy tones.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5efe2"/>
+      <stop offset="1" stop-color="#d7bd8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <path d="M0 690c157-62 282-64 449-14 108 32 207 29 332-14 156-54 280-38 419 34v204H0Z" fill="#6f7c53"/>
+  <rect x="170" y="300" width="860" height="390" rx="34" fill="#5f432f"/>
+  <g fill="#34281d" opacity=".55">
+    <rect x="220" y="350" width="170" height="118" rx="18"/>
+    <rect x="420" y="350" width="170" height="118" rx="18"/>
+    <rect x="620" y="350" width="170" height="118" rx="18"/>
+    <rect x="820" y="350" width="170" height="118" rx="18"/>
+    <rect x="220" y="510" width="170" height="118" rx="18"/>
+    <rect x="420" y="510" width="170" height="118" rx="18"/>
+    <rect x="620" y="510" width="170" height="118" rx="18"/>
+    <rect x="820" y="510" width="170" height="118" rx="18"/>
+  </g>
+  <g fill="none" stroke="#8a9864" stroke-width="16" stroke-linecap="round">
+    <path d="M305 410c-18-72 11-125 79-161"/>
+    <path d="M505 410c-14-68 15-116 78-148"/>
+    <path d="M705 410c-16-69 16-119 82-152"/>
+    <path d="M905 410c-13-64 12-111 75-142"/>
+    <path d="M305 570c-16-64 10-111 73-143"/>
+    <path d="M505 570c-19-69 12-121 80-156"/>
+    <path d="M705 570c-12-61 14-105 70-134"/>
+    <path d="M905 570c-20-72 10-124 82-160"/>
+  </g>
+  <g fill="#344c33">
+    <ellipse cx="269" cy="304" rx="58" ry="30" transform="rotate(-35 269 304)"/>
+    <ellipse cx="382" cy="280" rx="58" ry="30" transform="rotate(35 382 280)"/>
+    <ellipse cx="473" cy="318" rx="54" ry="27" transform="rotate(-34 473 318)"/>
+    <ellipse cx="581" cy="292" rx="54" ry="27" transform="rotate(37 581 292)"/>
+    <ellipse cx="675" cy="312" rx="58" ry="29" transform="rotate(-36 675 312)"/>
+    <ellipse cx="789" cy="288" rx="58" ry="29" transform="rotate(35 789 288)"/>
+    <ellipse cx="879" cy="318" rx="51" ry="27" transform="rotate(-38 879 318)"/>
+    <ellipse cx="981" cy="292" rx="51" ry="27" transform="rotate(34 981 292)"/>
+    <ellipse cx="277" cy="470" rx="51" ry="27" transform="rotate(-36 277 470)"/>
+    <ellipse cx="371" cy="450" rx="51" ry="27" transform="rotate(35 371 450)"/>
+    <ellipse cx="471" cy="464" rx="56" ry="29" transform="rotate(-36 471 464)"/>
+    <ellipse cx="586" cy="438" rx="56" ry="29" transform="rotate(36 586 438)"/>
+    <ellipse cx="678" cy="478" rx="48" ry="25" transform="rotate(-35 678 478)"/>
+    <ellipse cx="773" cy="457" rx="48" ry="25" transform="rotate(35 773 457)"/>
+    <ellipse cx="873" cy="464" rx="58" ry="30" transform="rotate(-36 873 464)"/>
+    <ellipse cx="988" cy="437" rx="58" ry="30" transform="rotate(35 988 437)"/>
+  </g>
+  <text x="600" y="805" text-anchor="middle" fill="#34281d" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="0">PLACEHOLDER IMAGE</text>
+</svg>

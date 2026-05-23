@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1100" viewBox="0 0 1400 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder family garden table illustration</title>
+  <desc id="desc">A warm placeholder illustration with garden beds, plants, craft jars, and a family work table.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8ead0"/>
+      <stop offset="1" stop-color="#d9bd86"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" x2="1">
+      <stop offset="0" stop-color="#4d3424"/>
+      <stop offset="1" stop-color="#765038"/>
+    </linearGradient>
+    <pattern id="grain" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M0 14h34M0 32h34M14 0v34M31 0v34" stroke="#6f7c53" stroke-opacity=".12" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="1100" fill="url(#sky)"/>
+  <rect width="1400" height="1100" fill="url(#grain)"/>
+  <circle cx="1115" cy="175" r="92" fill="#a7603d" opacity=".28"/>
+  <path d="M0 702c184-90 348-103 524-39 128 47 245 48 370 2 184-67 333-42 506 55v380H0Z" fill="#344c33"/>
+  <path d="M0 776c189-74 364-78 527-15 157 60 289 51 424 2 154-56 292-51 449 28v309H0Z" fill="#6f7c53"/>
+  <rect x="164" y="612" width="1072" height="92" rx="24" fill="#5f432f"/>
+  <rect x="220" y="690" width="960" height="128" rx="18" fill="url(#soil)"/>
+  <path d="M291 690v128M438 690v128M585 690v128M732 690v128M879 690v128M1026 690v128" stroke="#d7bd8a" stroke-opacity=".25" stroke-width="6"/>
+  <path d="M305 633c-26-50-7-91 46-124 44 35 57 77 33 124Z" fill="#8a9864"/>
+  <path d="M358 633c-14-60 12-107 78-141 45 47 52 94 20 141Z" fill="#344c33"/>
+  <path d="M955 633c-25-51-9-91 44-126 44 36 58 78 36 126Z" fill="#6f7c53"/>
+  <path d="M1012 633c-13-62 13-109 79-143 45 48 52 96 19 143Z" fill="#344c33"/>
+  <g fill="#f5efe2">
+    <circle cx="556" cy="506" r="54"/>
+    <circle cx="700" cy="492" r="62"/>
+    <circle cx="847" cy="506" r="54"/>
+  </g>
+  <g fill="#34281d">
+    <path d="M510 560h94c41 0 74 33 74 74v50H436v-50c0-41 33-74 74-74Z"/>
+    <path d="M649 555h102c48 0 86 38 86 86v43H563v-43c0-48 38-86 86-86Z"/>
+    <path d="M798 560h94c41 0 74 33 74 74v50H724v-50c0-41 33-74 74-74Z"/>
+  </g>
+  <g fill="#d7bd8a">
+    <rect x="242" y="822" width="192" height="46" rx="23"/>
+    <rect x="492" y="822" width="192" height="46" rx="23"/>
+    <rect x="742" y="822" width="192" height="46" rx="23"/>
+    <rect x="992" y="822" width="192" height="46" rx="23"/>
+  </g>
+  <text x="700" y="1004" text-anchor="middle" fill="#34281d" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" letter-spacing="0">PLACEHOLDER IMAGE</text>
+</svg>

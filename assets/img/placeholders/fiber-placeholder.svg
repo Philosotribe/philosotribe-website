@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder fiber craft illustration</title>
+  <desc id="desc">Yarn, thread, and simple textile tools.</desc>
+  <rect width="1000" height="700" fill="#f8ead0"/>
+  <circle cx="310" cy="335" r="132" fill="#a7603d"/>
+  <circle cx="310" cy="335" r="76" fill="#f5efe2"/>
+  <circle cx="590" cy="315" r="112" fill="#344c33"/>
+  <circle cx="590" cy="315" r="61" fill="#f5efe2"/>
+  <path d="M164 500c201-136 376-134 582 0" fill="none" stroke="#6f7c53" stroke-width="24" stroke-linecap="round"/>
+  <path d="M206 532c164-93 315-92 482 0" fill="none" stroke="#5f432f" stroke-width="18" stroke-linecap="round"/>
+  <rect x="710" y="210" width="70" height="310" rx="35" fill="#d7bd8a"/>
+  <rect x="810" y="210" width="70" height="310" rx="35" fill="#5f432f"/>
+  <text x="500" y="625" text-anchor="middle" fill="#34281d" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="0">PLACEHOLDER IMAGE</text>
+</svg>

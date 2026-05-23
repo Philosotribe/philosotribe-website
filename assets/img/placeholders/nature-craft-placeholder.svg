@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder nature craft illustration</title>
+  <desc id="desc">Leaves, wood slices, and dried flowers as craft materials.</desc>
+  <rect width="1000" height="700" fill="#f5efe2"/>
+  <circle cx="285" cy="360" r="122" fill="#d7bd8a"/>
+  <circle cx="285" cy="360" r="70" fill="#5f432f"/>
+  <g fill="#344c33">
+    <ellipse cx="565" cy="270" rx="104" ry="42" transform="rotate(-36 565 270)"/>
+    <ellipse cx="642" cy="388" rx="104" ry="42" transform="rotate(36 642 388)"/>
+    <ellipse cx="770" cy="292" rx="104" ry="42" transform="rotate(-18 770 292)"/>
+  </g>
+  <g fill="none" stroke="#a7603d" stroke-width="12" stroke-linecap="round">
+    <path d="M512 448c-32 54-25 103 22 147"/>
+    <path d="M624 448c28 57 21 105-24 147"/>
+    <path d="M742 438c33 64 24 116-28 157"/>
+  </g>
+  <circle cx="512" cy="448" r="34" fill="#a7603d"/>
+  <circle cx="624" cy="448" r="34" fill="#a7603d"/>
+  <circle cx="742" cy="438" r="34" fill="#a7603d"/>
+  <text x="500" y="625" text-anchor="middle" fill="#34281d" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="0">PLACEHOLDER IMAGE</text>
+</svg>

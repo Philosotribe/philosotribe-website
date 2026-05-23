@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder harvest basket illustration</title>
+  <desc id="desc">A basket filled with produce in earthy colors.</desc>
+  <rect width="1000" height="700" fill="#f5efe2"/>
+  <path d="M0 455c132-47 244-55 365-15 100 33 190 37 300 0 134-45 236-32 335 25v235H0Z" fill="#8a9864"/>
+  <path d="M230 360h540l-62 190H292Z" fill="#5f432f"/>
+  <path d="M300 360c26-132 374-132 400 0" fill="none" stroke="#34281d" stroke-width="28" stroke-linecap="round"/>
+  <g>
+    <circle cx="355" cy="338" r="48" fill="#a7603d"/>
+    <circle cx="452" cy="324" r="52" fill="#d7bd8a"/>
+    <circle cx="552" cy="328" r="50" fill="#a7603d"/>
+    <circle cx="650" cy="340" r="46" fill="#6f7c53"/>
+  </g>
+  <g fill="#344c33">
+    <ellipse cx="330" cy="273" rx="45" ry="20" transform="rotate(-28 330 273)"/>
+    <ellipse cx="574" cy="270" rx="45" ry="20" transform="rotate(25 574 270)"/>
+    <ellipse cx="668" cy="287" rx="45" ry="20" transform="rotate(-18 668 287)"/>
+  </g>
+  <path d="M300 418h400M285 472h430" stroke="#d7bd8a" stroke-width="15" opacity=".7"/>
+  <text x="500" y="625" text-anchor="middle" fill="#34281d" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="0">PLACEHOLDER IMAGE</text>
+</svg>

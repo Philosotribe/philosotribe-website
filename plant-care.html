@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Plant care instructions from Philosotribe for plants sold through the family shop."
+    >
+    <title>Plant Care | Philosotribe</title>
+    <link rel="icon" type="image/png" href="assets/img/PhilosotribeIcon.png">
+    <link rel="apple-touch-icon" href="assets/img/PhilosotribeIcon.png">
+    <meta property="og:site_name" content="Philosotribe">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Plant Care | Philosotribe">
+    <meta
+      property="og:description"
+      content="Colorado Springs-focused care notes for Philosotribe starter plants."
+    >
+    <meta property="og:url" content="https://philosotribe.org/plant-care.html">
+    <meta property="og:image" content="https://philosotribe.org/assets/img/OpenGraph.jpg">
+    <meta property="og:image:alt" content="Philosotribe logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-site-header>
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Philosotribe home">
+          <span class="brand-mark" aria-hidden="true"><img src="assets/img/PhilosotribeIcon.png" alt=""></span>
+          <span class="brand-text">Philosotribe</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div class="site-menu" id="site-menu" data-site-menu>
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="plants.html">Plants</a>
+          <a class="nav-link" href="crafts.html">Crafts</a>
+          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+
+          <div class="dropdown" data-dropdown>
+            <button class="nav-link dropdown-trigger" type="button" aria-expanded="false" aria-controls="explore-menu" data-dropdown-trigger>
+              Explore
+              <span class="chevron" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown-menu" id="explore-menu" data-dropdown-menu>
+              <a href="plants.html">Plant Projects</a>
+              <a href="plant-care.html" aria-current="page">Plant Care</a>
+              <a href="crafts.html">Craft Showcase</a>
+              <a href="about.html">Our Story</a>
+              <a href="contact.html">Get in Touch</a>
+              <a href="https://www.etsy.com/shop/Philosotribe" target="_blank" rel="noreferrer">Etsy Store</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero plant-care-hero">
+        <div>
+          <p class="eyebrow">Plant care</p>
+          <h1>Care notes for plants we sell.</h1>
+          <p>
+            This page is a home for simple, practical care instructions that customers can reference after bringing home
+            a Philosotribe plant. Timing estimates count from planting a hardened-off 3-5 inch potted starter into
+            the garden, not from seed.
+          </p>
+          <p class="care-local-note">
+            Colorado Springs gardens can swing from dry wind and intense sun to cold nights, hail, or sudden storms.
+            Use these notes as a starting point and adjust watering, shade, and protection based on the week's weather.
+          </p>
+        </div>
+      </section>
+
+      <section class="care-guide-section plant-care-primary" aria-labelledby="care-guide-heading">
+        <div class="section-heading care-guide-heading-row">
+          <div>
+            <p class="eyebrow">Plant guides</p>
+            <h2 id="care-guide-heading">Care sheets for current plants.</h2>
+          </div>
+          <div class="care-controls" aria-label="Plant care filters">
+            <label class="care-search" for="plant-care-search">
+              <span>Find a plant</span>
+              <input
+                id="plant-care-search"
+                type="search"
+                placeholder="Search plants"
+                autocomplete="off"
+                data-plant-care-search
+                aria-controls="plant-care-list"
+              >
+            </label>
+
+            <div class="cycle-filter" aria-label="Filter care sheets by life cycle">
+              <span>Life cycle</span>
+              <div class="cycle-options">
+                <button class="cycle-button active" type="button" data-plant-care-cycle="all" aria-pressed="true">All</button>
+                <button class="cycle-button" type="button" data-plant-care-cycle="Perennial" aria-pressed="false">Perennial</button>
+                <button class="cycle-button" type="button" data-plant-care-cycle="Annual" aria-pressed="false">Annual</button>
+              </div>
+            </div>
+
+            <label class="care-filter" for="plant-care-label-filter">
+              <span>Plant group</span>
+              <select class="care-filter-select" id="plant-care-label-filter" data-plant-care-filter aria-controls="plant-care-list"></select>
+            </label>
+          </div>
+        </div>
+
+        <p class="care-result-count" data-plant-care-results></p>
+
+        <div class="care-guide-list" id="plant-care-list" data-plant-care-list aria-live="polite">
+          <p class="care-empty">Plant care sheets will load here.</p>
+        </div>
+      </section>
+
+      <section class="care-section" aria-labelledby="care-basics-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Care basics</p>
+          <h2 id="care-basics-heading">Start here for most young plants.</h2>
+        </div>
+
+        <div class="care-grid">
+          <article class="care-card">
+            <span class="care-icon" aria-hidden="true">1</span>
+            <h3>Light</h3>
+            <p>Colorado Springs sun is strong at elevation. Give full-sun plants direct light, but protect new starts from harsh afternoon sun during their first few days outside.</p>
+          </article>
+
+          <article class="care-card">
+            <span class="care-icon" aria-hidden="true">2</span>
+            <h3>Water</h3>
+            <p>Dry wind can pull moisture out quickly. Water slowly at the soil line, then check with a finger before watering again so roots stay moist but not soggy.</p>
+          </article>
+
+          <article class="care-card">
+            <span class="care-icon" aria-hidden="true">3</span>
+            <h3>Transition</h3>
+            <p>Harden off outdoor plants gradually and keep frost cloth or a container nearby for cold nights, hail, and sudden spring weather swings.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div>
+          <p class="eyebrow">Need help?</p>
+          <h2>Questions about a plant?</h2>
+          <p>Email us with the plant name and a clear description of your question or concern, and we will do our best to help.</p>
+        </div>
+        <a class="button button-primary" href="mailto:philosotribe@gmail.com">Email Philosotribe</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a class="footer-brand" href="index.html">Philosotribe</a>
+          <p>Hands-on family learning through plants, crafts, and small business practice.</p>
+        </div>
+        <div class="footer-links" aria-label="Footer navigation">
+          <a href="plants.html">Plants</a>
+          <a href="plant-care.html">Plant Care</a>
+          <a href="crafts.html">Crafts</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="credits.html">Credits</a>
+          <a href="https://www.etsy.com/shop/Philosotribe" target="_blank" rel="noreferrer">Etsy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/plant-care-data.js"></script>
+    <script src="assets/js/plant-care.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

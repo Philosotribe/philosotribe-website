@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder product packaging illustration</title>
+  <desc id="desc">Simple handmade product boxes, tags, and packaging materials.</desc>
+  <rect width="1000" height="700" fill="#f8ead0"/>
+  <rect x="180" y="275" width="270" height="245" rx="24" fill="#5f432f"/>
+  <path d="M180 275l135-94 135 94Z" fill="#a7603d"/>
+  <rect x="552" y="220" width="260" height="300" rx="24" fill="#ded3bd"/>
+  <rect x="590" y="274" width="184" height="88" rx="14" fill="#344c33"/>
+  <path d="M625 405h114M625 447h86" stroke="#5f432f" stroke-width="18" stroke-linecap="round"/>
+  <path d="M456 430c57-70 103-70 160 0" fill="none" stroke="#6f7c53" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="455" cy="430" r="42" fill="#d7bd8a"/>
+  <circle cx="615" cy="430" r="42" fill="#d7bd8a"/>
+  <text x="500" y="625" text-anchor="middle" fill="#34281d" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="0">PLACEHOLDER IMAGE</text>
+</svg>
