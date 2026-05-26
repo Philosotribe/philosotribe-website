@@ -8,6 +8,7 @@ Static HTML/CSS/JS website for `philosotribe.org`, ready for GitHub Pages.
 - `plants.html`
 - `plant-care.html`
 - `crafts.html`
+- `calendar.html`
 - `about.html`
 - `contact.html`
 - `credits.html`
@@ -103,6 +104,30 @@ For plant photos, add the image file to `assets/img/plants/`, then set `image` t
 image: "assets/img/plants/tomato-start.jpg",
 imageAlt: "Young tomato plant in a small pot."
 ```
+
+## Merchant Calendar
+
+The calendar page is:
+
+```text
+calendar.html
+```
+
+It reads public Google Calendar events from:
+
+```text
+assets/js/calendar.js
+```
+
+The custom calendar uses the Google Calendar API to render a themed next-sale banner, month grid, and upcoming sale list.
+To replace the calendar later:
+
+1. Make the replacement calendar public if you want website visitors to see it.
+2. Update `CALENDAR_ID` in `assets/js/calendar.js`.
+3. Use a Google API key restricted to the Google Calendar API and the public website domains.
+4. Update `CALENDAR_API_KEY` only when rotating or replacing that restricted key.
+
+New public events added to that Google Calendar will appear on the website without editing the site.
 
 ## GitHub Pages
 

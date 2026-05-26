@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Contact Philosotribe for plant care questions, local pickup notes, and family project questions."
+      content="Upcoming Philosotribe merchant days, local plant stands, craft sales, and market dates."
     >
-    <title>Contact | Philosotribe</title>
+    <title>Calendar | Philosotribe</title>
     <link rel="icon" type="image/png" href="assets/img/PhilosotribeIcon.png">
     <link rel="apple-touch-icon" href="assets/img/PhilosotribeIcon.png">
     <meta property="og:site_name" content="Philosotribe">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Contact | Philosotribe">
+    <meta property="og:title" content="Calendar | Philosotribe">
     <meta
       property="og:description"
-      content="Contact Philosotribe for plant care questions, local pickup notes, and family project questions."
+      content="Upcoming Philosotribe merchant days, local plant stands, craft sales, and market dates."
     >
-    <meta property="og:url" content="https://philosotribe.org/contact.html">
+    <meta property="og:url" content="https://philosotribe.org/calendar.html">
     <meta property="og:image" content="https://philosotribe.org/assets/img/OpenGraph.jpg">
     <meta property="og:image:alt" content="Philosotribe logo">
     <meta name="twitter:card" content="summary_large_image">
@@ -50,9 +50,9 @@
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="plants.html">Plants</a>
           <a class="nav-link" href="crafts.html">Crafts</a>
-          <a class="nav-link" href="calendar.html">Calendar</a>
+          <a class="nav-link active" href="calendar.html" aria-current="page">Calendar</a>
           <a class="nav-link" href="about.html">About Us</a>
-          <a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
 
           <div class="dropdown" data-dropdown>
             <button class="nav-link dropdown-trigger" type="button" aria-expanded="false" aria-controls="explore-menu" data-dropdown-trigger>
@@ -63,7 +63,7 @@
               <a href="plants.html">Plant Projects</a>
               <a href="plant-care.html">Plant Care</a>
               <a href="crafts.html">Craft Showcase</a>
-              <a href="calendar.html">Merchant Calendar</a>
+              <a href="calendar.html" aria-current="page">Merchant Calendar</a>
               <a href="about.html">Our Story</a>
               <a href="contact.html">Get in Touch</a>
               <a href="https://www.etsy.com/shop/Philosotribe" target="_blank" rel="noreferrer">Etsy Store</a>
@@ -74,55 +74,20 @@
     </header>
 
     <main id="main">
-      <section class="page-hero contact-hero">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h1>Reach our family or visit the shop.</h1>
-          <p>
-            For plant care questions, local pickup notes, seed availability, or family project questions, email us directly.
-            Current seed listings and ordering details live in the Philosotribe Etsy shop.
-          </p>
-        </div>
-        <div class="page-hero-media">
-          <img src="assets/img/placeholders/market-placeholder.svg" alt="Placeholder illustration of a family market display">
-          <span class="placeholder-badge">Placeholder image</span>
-        </div>
-      </section>
-
-      <section class="contact-section" aria-labelledby="contact-heading">
-        <div class="section-heading">
-          <p class="eyebrow">Get in touch</p>
-          <h2 id="contact-heading">Contact details</h2>
+      <section class="calendar-section calendar-page" aria-labelledby="merchant-days-calendar-heading">
+        <div class="calendar-page-header">
+          <div>
+            <p class="eyebrow">Calendar</p>
+            <h1 id="merchant-days-calendar-heading">Merchant Days</h1>
+            <p>
+              Public plant stands, pickup windows, craft sale dates, and market notes update here automatically.
+            </p>
+          </div>
         </div>
 
-        <div class="contact-grid">
-          <article class="contact-card">
-            <span class="contact-icon" aria-hidden="true">@</span>
-            <h3>Email</h3>
-            <p><a href="mailto:philosotribe@gmail.com">philosotribe@gmail.com</a></p>
-          </article>
-
-          <article class="contact-card">
-            <span class="contact-icon" aria-hidden="true">$</span>
-            <h3>Etsy shop</h3>
-            <p><a href="https://www.etsy.com/shop/Philosotribe" target="_blank" rel="noreferrer">etsy.com/shop/Philosotribe</a></p>
-          </article>
-
-          <article class="contact-card muted-card">
-            <span class="contact-icon" aria-hidden="true">?</span>
-            <h3>What to include</h3>
-            <p>For plant questions, include the plant name, pot size if you know it, and a clear description of what you are seeing or wondering about.</p>
-          </article>
+        <div class="merchant-calendar-app" data-calendar-app>
+          <p class="care-empty">Merchant days will load here.</p>
         </div>
-      </section>
-
-      <section class="cta-band">
-        <div>
-          <p class="eyebrow">Shop updates</p>
-          <h2>Check our Etsy shop for current seed listings.</h2>
-          <p>Our website shows the family learning story and care notes. Etsy handles current seed listings, checkout, and order details.</p>
-        </div>
-        <a class="button button-primary" href="https://www.etsy.com/shop/Philosotribe" target="_blank" rel="noreferrer">Visit Etsy</a>
       </section>
     </main>
 
@@ -145,6 +110,7 @@
       </div>
     </footer>
 
+    <script src="assets/js/calendar.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
