@@ -773,35 +773,29 @@ p {
 }
 
 .signup-page {
-  min-height: calc(100vh - 78px);
-  display: grid;
-  align-items: center;
-  padding: clamp(3rem, 7vw, 5.5rem) 0;
+  padding-top: clamp(4rem, 8vw, 6.5rem);
+  padding-bottom: clamp(4rem, 8vw, 6.5rem);
 }
 
 .signup-layout {
-  width: min(100%, 42rem);
+  width: min(100%, 46rem);
   display: grid;
-  gap: 1.35rem;
-  justify-self: center;
+  gap: 1.6rem;
+  margin: 0 auto;
 }
 
 .signup-copy {
-  max-width: 40rem;
-  margin: 0 auto;
-  text-align: center;
+  max-width: 43rem;
 }
 
 .signup-copy h1 {
-  max-width: 13ch;
-  margin-inline: auto;
+  max-width: 12ch;
   margin-bottom: 1rem;
-  font-size: clamp(2.65rem, 6vw, 4.45rem);
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
 }
 
 .signup-copy > p {
-  max-width: 36rem;
-  margin-inline: auto;
+  max-width: 40rem;
   color: var(--muted);
   font-size: 1.08rem;
 }
@@ -815,7 +809,7 @@ p {
     linear-gradient(145deg, rgba(52, 76, 51, 0.13), rgba(215, 189, 138, 0.23)),
     rgba(255, 250, 240, 0.86);
   box-shadow: var(--shadow);
-  padding: clamp(1.1rem, 4vw, 1.7rem);
+  padding: clamp(1.2rem, 4vw, 1.8rem);
 }
 
 .signup-form-panel::before {
@@ -1900,8 +1894,8 @@ p {
     flex-direction: column;
   }
 
-  .signup-copy h1 {
-    max-width: 15ch;
+  .signup-layout {
+    width: min(100%, 38rem);
   }
 
   .merchant-selected-event {
@@ -1986,6 +1980,10 @@ p {
 
   .calendar-page {
     padding-top: 1.35rem;
+  }
+
+  .signup-section {
+    width: min(100% - 2rem, var(--max-width));
   }
 
   .next-sale-actions,
