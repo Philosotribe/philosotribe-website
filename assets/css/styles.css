@@ -773,57 +773,37 @@ p {
 }
 
 .signup-page {
-  padding-bottom: clamp(2rem, 5vw, 4rem);
+  min-height: calc(100vh - 78px);
+  display: grid;
+  align-items: center;
+  padding: clamp(3rem, 7vw, 5.5rem) 0;
 }
 
 .signup-layout {
+  width: min(100%, 42rem);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.72fr);
-  gap: clamp(1.5rem, 5vw, 4rem);
-  align-items: center;
+  gap: 1.35rem;
+  justify-self: center;
 }
 
 .signup-copy {
-  max-width: 44rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .signup-copy h1 {
-  max-width: 12ch;
+  max-width: 13ch;
+  margin-inline: auto;
   margin-bottom: 1rem;
-  font-size: clamp(3rem, 7vw, 5.15rem);
+  font-size: clamp(2.65rem, 6vw, 4.45rem);
 }
 
 .signup-copy > p {
-  max-width: 42rem;
+  max-width: 36rem;
+  margin-inline: auto;
   color: var(--muted);
   font-size: 1.08rem;
-}
-
-.signup-highlights {
-  display: grid;
-  gap: 0.65rem;
-  margin: 1.6rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.signup-highlights li {
-  position: relative;
-  padding-left: 1.65rem;
-  color: var(--soil);
-  font-weight: 800;
-}
-
-.signup-highlights li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.72em;
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 50%;
-  background: var(--clay);
-  box-shadow: 0 0 0 0.28rem rgba(167, 96, 61, 0.14);
 }
 
 .signup-form-panel {
@@ -835,7 +815,7 @@ p {
     linear-gradient(145deg, rgba(52, 76, 51, 0.13), rgba(215, 189, 138, 0.23)),
     rgba(255, 250, 240, 0.86);
   box-shadow: var(--shadow);
-  padding: clamp(1rem, 3vw, 1.45rem);
+  padding: clamp(1.1rem, 4vw, 1.7rem);
 }
 
 .signup-form-panel::before {
@@ -988,31 +968,6 @@ p {
   to {
     transform: rotate(360deg);
   }
-}
-
-.signup-notes {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  padding-top: 0;
-}
-
-.signup-notes article {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: rgba(255, 250, 240, 0.72);
-  box-shadow: 0 16px 42px rgba(37, 29, 20, 0.1);
-  padding: 1.25rem;
-}
-
-.signup-notes h2 {
-  margin-bottom: 0.55rem;
-  font-size: 1.35rem;
-}
-
-.signup-notes p {
-  margin: 0;
-  color: var(--muted);
 }
 
 .care-grid {
@@ -1946,11 +1901,7 @@ p {
   }
 
   .signup-copy h1 {
-    max-width: 14ch;
-  }
-
-  .signup-notes {
-    grid-template-columns: 1fr;
+    max-width: 15ch;
   }
 
   .merchant-selected-event {
