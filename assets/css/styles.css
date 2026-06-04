@@ -279,6 +279,7 @@ main {
 .care-guide-section,
 .credits-section,
 .calendar-section,
+.signup-section,
 .cta-band {
   width: min(100% - 2rem, var(--max-width));
   margin: 0 auto;
@@ -484,7 +485,8 @@ p {
 .contact-section,
 .care-section,
 .care-guide-section,
-.calendar-section {
+.calendar-section,
+.signup-section {
   padding: clamp(4rem, 8vw, 6.5rem) 0;
 }
 
@@ -768,6 +770,249 @@ p {
   color: var(--moss);
   font-weight: 800;
   overflow-wrap: anywhere;
+}
+
+.signup-page {
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.signup-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.72fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.signup-copy {
+  max-width: 44rem;
+}
+
+.signup-copy h1 {
+  max-width: 12ch;
+  margin-bottom: 1rem;
+  font-size: clamp(3rem, 7vw, 5.15rem);
+}
+
+.signup-copy > p {
+  max-width: 42rem;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.signup-highlights {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.signup-highlights li {
+  position: relative;
+  padding-left: 1.65rem;
+  color: var(--soil);
+  font-weight: 800;
+}
+
+.signup-highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--clay);
+  box-shadow: 0 0 0 0.28rem rgba(167, 96, 61, 0.14);
+}
+
+.signup-form-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(52, 40, 29, 0.14);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(52, 76, 51, 0.13), rgba(215, 189, 138, 0.23)),
+    rgba(255, 250, 240, 0.86);
+  box-shadow: var(--shadow);
+  padding: clamp(1rem, 3vw, 1.45rem);
+}
+
+.signup-form-panel::before {
+  content: "";
+  display: block;
+  width: 4.2rem;
+  height: 0.32rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: var(--moss);
+}
+
+.mailerlite-signup #mlb2-42005301.ml-form-embedContainer {
+  display: block;
+  width: 100% !important;
+  margin: 0;
+}
+
+.mailerlite-signup .ml-form-align-center,
+.mailerlite-signup .ml-form-embedWrapper,
+.mailerlite-signup .ml-form-embedBody {
+  display: block !important;
+  width: 100% !important;
+}
+
+.mailerlite-signup .ml-form-embedWrapper {
+  max-width: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.mailerlite-signup .ml-form-embedBody,
+.mailerlite-signup .ml-form-successBody {
+  padding: 0 !important;
+}
+
+.mailerlite-signup .ml-form-embedContent,
+.mailerlite-signup .ml-form-successContent {
+  margin: 0 0 1.15rem !important;
+  text-align: left !important;
+}
+
+.mailerlite-signup .ml-form-embedContent h4,
+.mailerlite-signup .ml-form-successContent h4 {
+  margin: 0 0 0.45rem !important;
+  color: var(--soil) !important;
+  font-family: "Fraunces", Georgia, serif !important;
+  font-size: clamp(1.75rem, 4vw, 2.35rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.04 !important;
+  letter-spacing: 0 !important;
+}
+
+.mailerlite-signup .ml-form-embedContent p,
+.mailerlite-signup .ml-form-successContent p {
+  margin: 0 !important;
+  color: var(--muted) !important;
+  font-family: inherit !important;
+  font-size: 1rem !important;
+  line-height: 1.55 !important;
+}
+
+.mailerlite-signup .ml-form-formContent,
+.mailerlite-signup .ml-form-fieldRow {
+  margin: 0 0 0.75rem !important;
+  width: 100% !important;
+}
+
+.mailerlite-signup input[type="email"] {
+  width: 100% !important;
+  min-height: 3.15rem !important;
+  border: 1px solid rgba(95, 67, 47, 0.28) !important;
+  border-radius: var(--radius) !important;
+  background: rgba(255, 250, 240, 0.86) !important;
+  color: var(--ink) !important;
+  font: inherit !important;
+  line-height: 1.4 !important;
+  padding: 0 0.95rem !important;
+  box-shadow: inset 0 1px 0 rgba(255, 250, 240, 0.8);
+}
+
+.mailerlite-signup input[type="email"]::placeholder {
+  color: rgba(111, 98, 86, 0.86) !important;
+}
+
+.mailerlite-signup input[type="email"]:focus {
+  border-color: rgba(52, 76, 51, 0.72) !important;
+  outline: 3px solid rgba(111, 124, 83, 0.22);
+}
+
+.mailerlite-signup .ml-form-embedSubmit {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.mailerlite-signup .ml-form-embedSubmit button.primary {
+  display: inline-flex !important;
+  width: 100% !important;
+  min-height: 3.15rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid transparent !important;
+  border-radius: var(--radius) !important;
+  background: var(--moss) !important;
+  color: var(--cream) !important;
+  cursor: pointer !important;
+  font: inherit !important;
+  font-weight: 900 !important;
+  line-height: 1.2 !important;
+  padding: 0 1.05rem !important;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.mailerlite-signup .ml-form-embedSubmit button.loading {
+  width: 100% !important;
+  min-height: 3.15rem !important;
+  border: 1px solid transparent !important;
+  border-radius: var(--radius) !important;
+  background: var(--moss) !important;
+  color: var(--cream) !important;
+}
+
+.mailerlite-signup .ml-form-embedSubmit button.primary:hover,
+.mailerlite-signup .ml-form-embedSubmit button.primary:focus-visible {
+  background: #283b29 !important;
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.ml-form-embedSubmitLoad {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.ml-form-embedSubmitLoad::after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin: 1px;
+  border: 4px solid var(--cream);
+  border-color: var(--cream) var(--cream) var(--cream) transparent;
+  border-radius: 50%;
+  animation: ml-form-embedSubmitLoad 1.2s linear infinite;
+}
+
+@keyframes ml-form-embedSubmitLoad {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.signup-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding-top: 0;
+}
+
+.signup-notes article {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 250, 240, 0.72);
+  box-shadow: 0 16px 42px rgba(37, 29, 20, 0.1);
+  padding: 1.25rem;
+}
+
+.signup-notes h2 {
+  margin-bottom: 0.55rem;
+  font-size: 1.35rem;
+}
+
+.signup-notes p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .care-grid {
@@ -1629,7 +1874,8 @@ p {
   .page-hero,
   .content-grid,
   .split-section,
-  .story-section {
+  .story-section,
+  .signup-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1699,6 +1945,14 @@ p {
     flex-direction: column;
   }
 
+  .signup-copy h1 {
+    max-width: 14ch;
+  }
+
+  .signup-notes {
+    grid-template-columns: 1fr;
+  }
+
   .merchant-selected-event {
     grid-template-columns: 1fr;
   }
@@ -1744,6 +1998,7 @@ p {
   .care-guide-section,
   .credits-section,
   .calendar-section,
+  .signup-section,
   .cta-band,
   .footer-inner {
     width: min(100% - 1rem, var(--max-width));
