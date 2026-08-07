@@ -138,3 +138,17 @@ philosotribe.org
 ```
 
 After pushing this folder to a GitHub repository, enable GitHub Pages from the repository settings and point the domain DNS records to GitHub Pages.
+
+## Cache busting for GitHub Pages
+
+The site now uses a single cache-busting version in `assets/js/site-version.js`.
+
+Whenever you publish any website update, change:
+
+```js
+window.PHILOSOTRIBE_SITE_VERSION = "2026-08-07-1";
+```
+
+to a new value (for example, `2026-08-15-1`). The HTML always requests this tiny version file with a one-time cache bypass. When the value changes, CSS, local JavaScript, plant images, image credits, logos, and other local images are requested with the new version. Pages previously seen by a visitor also trigger a one-time versioned reload, which prevents an old cached HTML shell from continuing to show stale assets.
+
+Use a unique version for each deployment. A date plus revision number is easy to maintain: `YYYY-MM-DD-1`, `YYYY-MM-DD-2`, and so on.
