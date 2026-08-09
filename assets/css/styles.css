@@ -2079,3 +2079,176 @@ p {
   padding-right: max(1rem, calc((100% - var(--max-width)) / 2));
   padding-left: max(1rem, calc((100% - var(--max-width)) / 2));
 }
+
+/* First-visit newsletter invitation */
+body.newsletter-popup-open {
+  overflow: hidden;
+}
+
+.newsletter-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: rgba(36, 29, 24, 0.52);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.newsletter-popup.is-visible {
+  opacity: 1;
+}
+
+.newsletter-popup-panel {
+  position: relative;
+  width: min(100%, 35rem);
+  overflow: hidden;
+  border: 1px solid rgba(52, 40, 29, 0.2);
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(215, 189, 138, 0.34), transparent 15rem),
+    var(--cream);
+  box-shadow: 0 30px 90px rgba(28, 21, 15, 0.34);
+  padding: clamp(1.55rem, 4vw, 2.25rem);
+  transform: translateY(0.8rem) scale(0.985);
+  transition: transform 180ms ease;
+}
+
+.newsletter-popup.is-visible .newsletter-popup-panel {
+  transform: translateY(0) scale(1);
+}
+
+.newsletter-popup-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 0.38rem;
+  background: linear-gradient(90deg, var(--moss), var(--sage), var(--clay));
+}
+
+.newsletter-popup-close {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  width: 2.45rem;
+  height: 2.45rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(52, 40, 29, 0.16);
+  border-radius: 50%;
+  background: rgba(255, 250, 240, 0.9);
+  color: var(--soil);
+  font: inherit;
+  font-size: 1.45rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.newsletter-popup-close:hover,
+.newsletter-popup-close:focus-visible {
+  border-color: rgba(52, 76, 51, 0.42);
+  background: var(--canvas);
+  color: var(--moss);
+  outline: 3px solid rgba(111, 124, 83, 0.2);
+  outline-offset: 2px;
+}
+
+.newsletter-popup .eyebrow {
+  margin: 0 3.25rem 0.6rem 0;
+}
+
+.newsletter-popup h2 {
+  margin: 0;
+  max-width: 26rem;
+  color: var(--soil);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+  line-height: 1.08;
+}
+
+.newsletter-popup-copy {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.newsletter-popup-perk {
+  margin: 1.15rem 0 0;
+  border-left: 4px solid var(--clay);
+  border-radius: 0 8px 8px 0;
+  background: rgba(167, 96, 61, 0.09);
+  color: var(--soil);
+  padding: 0.82rem 0.95rem;
+}
+
+.newsletter-popup-perk strong {
+  color: var(--moss);
+}
+
+.newsletter-popup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.72rem;
+  margin-top: 1.35rem;
+}
+
+.newsletter-popup-skip {
+  min-height: 2.9rem;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 0 0.55rem;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(95, 67, 47, 0.3);
+  text-underline-offset: 0.22rem;
+  cursor: pointer;
+}
+
+.newsletter-popup-skip:hover,
+.newsletter-popup-skip:focus-visible {
+  color: var(--soil);
+  outline: none;
+  text-decoration-color: currentColor;
+}
+
+.newsletter-popup-fineprint {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 560px) {
+  .newsletter-popup {
+    align-items: end;
+    padding: 0.75rem;
+  }
+
+  .newsletter-popup-panel {
+    width: 100%;
+    max-height: calc(100vh - 1.5rem);
+    overflow-y: auto;
+    padding: 1.45rem 1.15rem 1.25rem;
+  }
+
+  .newsletter-popup-actions,
+  .newsletter-popup-actions .button {
+    width: 100%;
+  }
+
+  .newsletter-popup-skip {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .newsletter-popup,
+  .newsletter-popup-panel {
+    transition: none;
+  }
+}
