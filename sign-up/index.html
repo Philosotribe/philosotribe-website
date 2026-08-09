@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta
       name="description"
       content="Sign up for Philosotribe email updates about plant sales, merchant days, seasonal notes, and subscriber discounts."
     >
     <title>Sign Up | Philosotribe</title>
-    <link rel="icon" type="image/png" href="../assets/img/PhilosotribeIcon.png">
-    <link rel="apple-touch-icon" href="../assets/img/PhilosotribeIcon.png">
+    <link rel="icon" type="image/png" href="../assets/img/PhilosotribeIcon.png?v=2026-08-08-1">
+    <link rel="apple-touch-icon" href="../assets/img/PhilosotribeIcon.png?v=2026-08-08-1">
     <meta property="og:site_name" content="Philosotribe">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sign Up | Philosotribe">
@@ -18,7 +21,7 @@
       content="Join Philosotribe email updates for future sales, merchant days, and subscriber notes."
     >
     <meta property="og:url" content="https://philosotribe.org/sign-up/">
-    <meta property="og:image" content="https://philosotribe.org/assets/img/OpenGraph.jpg">
+    <meta property="og:image" content="https://philosotribe.org/assets/img/OpenGraph.jpg?v=2026-08-08-1">
     <meta property="og:image:alt" content="Philosotribe logo">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://philosotribe.org/sign-up/">
@@ -30,7 +33,74 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+      (function () {
+        window.PHILOSOTRIBE_ASSET_ROOT = "../";
+        document.write('<script src="../assets/js/site-version.js?bootstrap=' + Date.now() + '"><\/script>');
+      }());
+    </script>
+    <script>
+      (function () {
+        const version = window.PHILOSOTRIBE_SITE_VERSION || "uncached";
+        window.PHILOSOTRIBE_ASSET_VERSION = version;
+
+        window.philosotribeAssetUrl = function (url) {
+          if (!url || /^(?:data:|blob:|mailto:|tel:|javascript:)/i.test(url)) {
+            return url;
+          }
+
+          try {
+            const absolute = new URL(url, window.location.href);
+            if (absolute.origin !== window.location.origin) {
+              return url;
+            }
+          } catch (_) {
+            return url;
+          }
+
+          const hashIndex = url.indexOf("#");
+          const hash = hashIndex >= 0 ? url.slice(hashIndex) : "";
+          const withoutHash = hashIndex >= 0 ? url.slice(0, hashIndex) : url;
+          const queryIndex = withoutHash.indexOf("?");
+          const path = queryIndex >= 0 ? withoutHash.slice(0, queryIndex) : withoutHash;
+          const query = queryIndex >= 0 ? withoutHash.slice(queryIndex + 1) : "";
+          const params = new URLSearchParams(query);
+          params.set("v", version);
+          return path + "?" + params.toString() + hash;
+        };
+
+        // If this browser has an older cached copy of this page, force a one-time
+        // navigation to a versioned HTML URL when the site version changes.
+        try {
+          const pageKey = "philosotribe-page-version:" + window.location.pathname;
+          const previousVersion = window.localStorage.getItem(pageKey);
+          const pageUrl = new URL(window.location.href);
+          const urlVersion = pageUrl.searchParams.get("_sitev");
+          const versionChanged = previousVersion && previousVersion !== version;
+          const staleVersionedUrl = urlVersion && urlVersion !== version;
+
+          window.localStorage.setItem(pageKey, version);
+
+          if ((versionChanged || staleVersionedUrl) && urlVersion !== version) {
+            pageUrl.searchParams.set("_sitev", version);
+            window.location.replace(pageUrl.toString());
+            return;
+          }
+        } catch (_) {
+          // Cache-busting of CSS, JS, and images still works when storage is disabled.
+        }
+
+        document.querySelectorAll('link[rel~="icon"], link[rel="apple-touch-icon"]').forEach((link) => {
+          const href = link.getAttribute("href");
+          if (href) {
+            link.setAttribute("href", window.philosotribeAssetUrl(href));
+          }
+        });
+
+        document.write('<link rel="stylesheet" href="' + window.philosotribeAssetUrl("../assets/css/styles.css") + '">');
+      }());
+    </script>
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css?v=2026-08-08-1"></noscript>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -38,7 +108,7 @@
     <header class="site-header" data-site-header>
       <nav class="nav-shell" aria-label="Main navigation">
         <a class="brand" href="../index.html" aria-label="Philosotribe home">
-          <span class="brand-mark" aria-hidden="true"><img src="../assets/img/PhilosotribeIcon.png" alt=""></span>
+          <span class="brand-mark" aria-hidden="true"><img src="../assets/img/PhilosotribeIcon.png?v=2026-08-08-1" alt=""></span>
           <span class="brand-text">Philosotribe</span>
         </a>
 
@@ -86,7 +156,8 @@
             <h1 id="signup-heading">Join the Philosotribe list.</h1>
             <p>
               Sign up for news on what Philosotribe is doing next, including future plant sales, merchant days,
-              seasonal notes, and occasional subscriber discounts.
+              and seasonal notes. Your welcome email will include a subscriber discount, and future update emails
+              will include subscriber discounts too.
             </p>
           </div>
 
@@ -180,6 +251,10 @@
     <script>
       fetch("https://assets.mailerlite.com/jsonp/2394522/forms/189005513212561051/takel");
     </script>
-    <script src="../assets/js/main.js"></script>
+    <script>
+
+      document.write('<script src="' + window.philosotribeAssetUrl("../assets/js/main.js") + '"><\/script>');
+
+    </script>
   </body>
 </html>
