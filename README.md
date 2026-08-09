@@ -146,9 +146,13 @@ The site now uses a single cache-busting version in `assets/js/site-version.js`.
 Whenever you publish any website update, change:
 
 ```js
-window.PHILOSOTRIBE_SITE_VERSION = "2026-08-07-1";
+window.PHILOSOTRIBE_SITE_VERSION = "2026-08-08-1";
 ```
 
 to a new value (for example, `2026-08-15-1`). The HTML always requests this tiny version file with a one-time cache bypass. When the value changes, CSS, local JavaScript, plant images, image credits, logos, and other local images are requested with the new version. Pages previously seen by a visitor also trigger a one-time versioned reload, which prevents an old cached HTML shell from continuing to show stale assets.
 
 Use a unique version for each deployment. A date plus revision number is easy to maintain: `YYYY-MM-DD-1`, `YYYY-MM-DD-2`, and so on.
+
+## First-visit newsletter popup
+
+The site shows a themed newsletter invitation once per browser. Dismissing it by the X button, **Not now**, the backdrop, Escape, or the sign-up button stores a long-lived dismissal in localStorage with a cookie fallback, so ordinary site updates do not make it reappear. The dedicated `/sign-up/` page never shows the popup and counts as dismissed.
