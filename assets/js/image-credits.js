@@ -38,7 +38,7 @@ function createCreditCard(credit) {
 }
 
 if (imageCreditsList) {
-  fetch("assets/img/plants/credits.json")
+  fetch(window.philosotribeAssetUrl ? window.philosotribeAssetUrl("assets/img/plants/credits.json") : "assets/img/plants/credits.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Unable to load image credits.");

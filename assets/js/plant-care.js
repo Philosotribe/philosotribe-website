@@ -91,7 +91,7 @@ function createCareGuide(item) {
   if (item.image) {
     const image = document.createElement("img");
     image.className = "care-guide-image";
-    image.src = item.image;
+    image.src = window.philosotribeAssetUrl ? window.philosotribeAssetUrl(item.image) : item.image;
     image.alt = item.imageAlt || `${item.name || "Plant"} reference image`;
     image.loading = "lazy";
     image.decoding = "async";
