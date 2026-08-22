@@ -437,6 +437,10 @@ function renderMonthGrid() {
       dayCell.classList.add("today");
     }
 
+    if (dayEvents.length) {
+      dayCell.classList.add("has-events");
+    }
+
     dayCell.append(createElement("span", "merchant-day-number", dayNumberFormatter.format(day)));
 
     dayEvents.slice(0, 2).forEach((event) => {

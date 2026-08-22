@@ -18,11 +18,22 @@ const navToggle = document.querySelector("[data-nav-toggle]");
 const siteMenu = document.querySelector("[data-site-menu]");
 const dropdowns = document.querySelectorAll("[data-dropdown]");
 
+const closeDropdowns = () => {
+  dropdowns.forEach((dropdown) => {
+    dropdown.classList.remove("open");
+    dropdown.querySelector("[data-dropdown-trigger]")?.setAttribute("aria-expanded", "false");
+  });
+};
+
 if (navToggle && siteMenu) {
   navToggle.addEventListener("click", () => {
     const isOpen = siteMenu.classList.toggle("open");
     document.body.classList.toggle("menu-open", isOpen);
     navToggle.setAttribute("aria-expanded", String(isOpen));
+
+    if (!isOpen) {
+      closeDropdowns();
+    }
   });
 }
 
@@ -35,9 +46,42 @@ dropdowns.forEach((dropdown) => {
 
   trigger.addEventListener("click", (event) => {
     event.stopPropagation();
+
+    dropdowns.forEach((otherDropdown) => {
+      if (otherDropdown === dropdown) {
+        return;
+      }
+
+      otherDropdown.classList.remove("open");
+      otherDropdown.querySelector("[data-dropdown-trigger]")?.setAttribute("aria-expanded", "false");
+    });
+
     const isOpen = dropdown.classList.toggle("open");
     trigger.setAttribute("aria-expanded", String(isOpen));
   });
+});
+
+// Following a navigation link on mobile closes the drawer immediately instead of
+// leaving the menu visible while the next page begins loading.
+siteMenu?.querySelectorAll("a[href]").forEach((link) => {
+  link.addEventListener("click", () => {
+    siteMenu.classList.remove("open");
+    document.body.classList.remove("menu-open");
+    navToggle?.setAttribute("aria-expanded", "false");
+    closeDropdowns();
+  });
+});
+
+// Reset mobile-only menu state when moving back to a desktop-width viewport.
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 900 || !siteMenu || !navToggle) {
+    return;
+  }
+
+  siteMenu.classList.remove("open");
+  document.body.classList.remove("menu-open");
+  navToggle.setAttribute("aria-expanded", "false");
+  closeDropdowns();
 });
 
 document.addEventListener("click", (event) => {
@@ -128,9 +172,9 @@ document.addEventListener("keydown", (event) => {
     >
       <button class="newsletter-popup-close" type="button" aria-label="Close newsletter invitation" data-newsletter-dismiss>&times;</button>
       <p class="eyebrow">A note from Philosotribe</p>
-      <h2 id="newsletter-popup-title">Want to shop with us again?</h2>
+      <h2 id="newsletter-popup-title">Want our next update in your inbox?</h2>
       <p class="newsletter-popup-copy" id="newsletter-popup-description">
-        Join the Philosotribe newsletter for plant-sale dates, merchant-day updates, and notes about what we're making and growing next. I promise they will only be like three times a year!
+        Join the Philosotribe newsletter for plant-sale dates, merchant-day updates, seasonal news, and notes about what we're making and growing next.
       </p>
       <p class="newsletter-popup-perk">
         <strong>Subscriber perk:</strong> your welcome email will include a discount, and future update emails will include subscriber discounts too.
