@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -11,8 +12,8 @@
       content="Upcoming Philosotribe merchant days, local plant stands, craft sales, and market dates."
     >
     <title>Calendar | Philosotribe</title>
-    <link rel="icon" type="image/png" href="assets/img/PhilosotribeIcon.png?v=2026-08-08-1">
-    <link rel="apple-touch-icon" href="assets/img/PhilosotribeIcon.png?v=2026-08-08-1">
+    <link rel="icon" type="image/png" href="assets/img/PhilosotribeIcon.png?v=2026-08-21-5">
+    <link rel="apple-touch-icon" href="assets/img/PhilosotribeIcon.png?v=2026-08-21-5">
     <meta property="og:site_name" content="Philosotribe">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Calendar | Philosotribe">
@@ -21,7 +22,7 @@
       content="Upcoming Philosotribe merchant days, local plant stands, craft sales, and market dates."
     >
     <meta property="og:url" content="https://philosotribe.org/calendar.html">
-    <meta property="og:image" content="https://philosotribe.org/assets/img/OpenGraph.jpg?v=2026-08-08-1">
+    <meta property="og:image" content="https://philosotribe.org/assets/img/OpenGraph.jpg?v=2026-08-21-5">
     <meta property="og:image:alt" content="Philosotribe logo">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,55 +98,13 @@
         document.write('<link rel="stylesheet" href="' + window.philosotribeAssetUrl("assets/css/styles.css") + '">');
       }());
     </script>
-    <noscript><link rel="stylesheet" href="assets/css/styles.css?v=2026-08-08-1"></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/styles.css?v=2026-08-21-5"></noscript>
   </head>
-  <body>
+  <body class="calendar-body">
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" data-site-header>
-      <nav class="nav-shell" aria-label="Main navigation">
-        <a class="brand" href="index.html" aria-label="Philosotribe home">
-          <span class="brand-mark" aria-hidden="true"><img src="assets/img/PhilosotribeIcon.png?v=2026-08-08-1" alt=""></span>
-          <span class="brand-text">Philosotribe</span>
-        </a>
-
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
-          <span class="nav-toggle-line"></span>
-          <span class="nav-toggle-line"></span>
-          <span class="nav-toggle-line"></span>
-          <span class="sr-only">Menu</span>
-        </button>
-
-        <div class="site-menu" id="site-menu" data-site-menu>
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="plants.html">Plants</a>
-          <a class="nav-link" href="crafts.html">Crafts</a>
-          <a class="nav-link active" href="calendar.html" aria-current="page">Calendar</a>
-          <a class="nav-link" href="sign-up/">Sign Up</a>
-          <a class="nav-link" href="about.html">About Us</a>
-          <a class="nav-link" href="contact.html">Contact</a>
-
-          <div class="dropdown" data-dropdown>
-            <button class="nav-link dropdown-trigger" type="button" aria-expanded="false" aria-controls="explore-menu" data-dropdown-trigger>
-              Explore
-              <span class="chevron" aria-hidden="true"></span>
-            </button>
-            <div class="dropdown-menu" id="explore-menu" data-dropdown-menu>
-              <a href="plants.html">Plant Projects</a>
-              <a href="plant-care.html">Plant Care</a>
-              <a href="crafts.html">Craft Showcase</a>
-              <a href="calendar.html" aria-current="page">Merchant Calendar</a>
-              <a href="sign-up/">Newsletter Sign Up</a>
-              <a href="about.html">Our Story</a>
-              <a href="contact.html">Get in Touch</a>
-              <a href="https://www.etsy.com/shop/Philosotribe" target="_blank" rel="noreferrer">Etsy Store</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main id="main">
+    <header class="site-header" data-site-header></header>
+<main id="main">
       <section class="calendar-section calendar-page" aria-labelledby="merchant-days-calendar-heading">
         <div class="calendar-page-header">
           <div>
@@ -154,6 +113,11 @@
             <p>
               Public plant stands, pickup windows, craft sale dates, and market notes update here automatically.
             </p>
+            <aside class="calendar-schedule-note" role="note" aria-label="Schedule note">
+              <strong>A quick note about future dates:</strong> The farther out a date is, the more tentative it is.
+              We&rsquo;ll do our best to stick to the schedule, but life happens. If anything prevents us from setting up,
+              we&rsquo;ll update the calendar as soon as we can.
+            </aside>
           </div>
         </div>
 
@@ -163,27 +127,8 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div>
-          <a class="footer-brand" href="index.html">Philosotribe</a>
-          <p>Hands-on family learning through plants, crafts, and small business practice.</p>
-        </div>
-        <div class="footer-links" aria-label="Footer navigation">
-          <a href="plants.html">Plants</a>
-          <a href="plant-care.html">Plant Care</a>
-          <a href="crafts.html">Crafts</a>
-          <a href="calendar.html">Calendar</a>
-          <a href="sign-up/">Sign Up</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact</a>
-          <a href="credits.html">Credits</a>
-          <a href="https://www.etsy.com/shop/Philosotribe" target="_blank" rel="noreferrer">Etsy</a>
-        </div>
-      </div>
-    </footer>
-
-    <script>
+    <footer class="site-footer" data-site-footer></footer>
+<script>
 
 
       document.write('<script src="' + window.philosotribeAssetUrl("assets/js/calendar.js") + '"><\/script>');
@@ -191,6 +136,9 @@
 
     </script>
     <script>
+
+      document.write('<script src="' + window.philosotribeAssetUrl("assets/js/site-navigation.js") + '"><\/script>');
+
 
       document.write('<script src="' + window.philosotribeAssetUrl("assets/js/main.js") + '"><\/script>');
 
