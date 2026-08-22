@@ -2252,3 +2252,414 @@ body.newsletter-popup-open {
     transition: none;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Shared navigation overhaul
+   Header and footer markup are rendered by assets/js/site-navigation.js.
+   -------------------------------------------------------------------------- */
+
+.dropdown-menu-start {
+  left: 0;
+  right: auto;
+}
+
+.dropdown-menu a.active,
+.dropdown-menu a[aria-current="page"] {
+  background: rgba(111, 124, 83, 0.14);
+  color: var(--moss);
+}
+
+.dropdown.open .chevron {
+  transform: rotate(225deg) translate(-1px, -1px);
+}
+
+.site-header .nav-cta {
+  margin-left: 0.35rem;
+  border: 1px solid rgba(255, 250, 240, 0.72);
+  background: var(--cream);
+  color: var(--moss);
+  box-shadow: 0 7px 20px rgba(37, 29, 20, 0.14);
+  padding-inline: 1rem;
+}
+
+.site-header .nav-cta:hover,
+.site-header .nav-cta:focus-visible,
+.site-header .nav-cta.active {
+  border-color: var(--straw);
+  background: var(--straw);
+  color: var(--soil);
+}
+
+/* Footer: keep the header simple and let the footer act as the fuller sitemap. */
+.footer-inner-grid {
+  display: grid;
+  grid-template-columns: minmax(15rem, 1.05fr) minmax(30rem, 1.65fr);
+  align-items: start;
+  gap: clamp(2rem, 6vw, 5rem);
+  padding: 2.3rem 0 2.5rem;
+}
+
+.footer-intro p {
+  max-width: 28rem;
+}
+
+.footer-nav-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.footer-link-group {
+  display: grid;
+  align-content: start;
+  gap: 0.34rem;
+}
+
+.footer-heading {
+  margin: 0 0 0.38rem;
+  color: var(--straw);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-link-group a {
+  width: fit-content;
+  color: rgba(255, 250, 240, 0.88);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-link-group a:hover,
+.footer-link-group a:focus-visible {
+  color: var(--cream);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  /* Mobile categories are collapsible instead of permanently dumping every link
+     into the menu. */
+  .site-menu .dropdown-menu {
+    display: none;
+    position: static;
+    min-width: 0;
+    margin: 0.2rem 0 0.35rem;
+    border-color: rgba(255, 250, 240, 0.12);
+    background: rgba(255, 250, 240, 0.96);
+    box-shadow: none;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  .site-menu .dropdown.open .dropdown-menu {
+    display: grid;
+  }
+
+  .site-menu .dropdown:not(.open):focus-within .dropdown-menu {
+    display: none;
+  }
+
+  .site-menu .dropdown-trigger.active {
+    background: rgba(255, 250, 240, 0.14);
+  }
+
+  .site-header .nav-cta {
+    width: 100%;
+    justify-content: center;
+    margin: 0.35rem 0 0;
+  }
+
+  .footer-inner-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .footer-nav-groups {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .footer-nav-groups {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .footer-nav-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dropdowns are explicitly opened by their buttons. This avoids the menu staying
+   visually stuck open merely because the trigger still has keyboard/mouse focus. */
+.dropdown:not(.open):focus-within .dropdown-menu {
+  opacity: 0;
+  transform: translateY(-0.35rem);
+  visibility: hidden;
+}
+
+@media (max-width: 900px) {
+  .site-menu .dropdown:not(.open):focus-within .dropdown-menu {
+    display: none;
+  }
+}
+
+/* Calendar schedule note */
+.calendar-schedule-note {
+  max-width: 46rem;
+  margin-top: 1rem;
+  border-left: 4px solid var(--sage);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: rgba(255, 250, 240, 0.72);
+  color: var(--muted);
+  padding: 0.9rem 1rem;
+  box-shadow: 0 10px 28px rgba(37, 29, 20, 0.07);
+}
+
+.calendar-schedule-note strong {
+  color: var(--soil);
+}
+
+/* Calendar cells with events get a subtle visual cue even when the event title is
+   collapsed on narrow screens. */
+.merchant-day.has-events {
+  background: rgba(230, 232, 210, 0.72);
+}
+
+@media (max-width: 900px) {
+  /* Attach the mobile drawer directly to the sticky header rather than using a
+     hard-coded viewport offset. This removes the thin gap that could appear on
+     some mobile browsers as their browser chrome changes height. */
+  .site-header {
+    background: var(--moss);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  .site-menu {
+    position: absolute;
+    inset: calc(100% - 1px) 0 auto 0;
+    max-height: calc(100dvh - 78px - env(safe-area-inset-top, 0px));
+    border-top: 1px solid rgba(255, 250, 240, 0.14);
+  }
+}
+
+@media (max-width: 560px) {
+  /* Stronger contrast for the compact month grid on phones. */
+  .calendar-body .merchant-calendar-surface,
+  .calendar-body .merchant-month,
+  .calendar-body .merchant-event-list,
+  .calendar-body .merchant-calendar-toolbar,
+  .calendar-body .merchant-day,
+  .calendar-body .merchant-event-card,
+  .calendar-body .calendar-status {
+    background-color: #fffaf0;
+  }
+
+  .calendar-body .merchant-day {
+    border-color: rgba(52, 40, 29, 0.24);
+  }
+
+  .calendar-body .merchant-weekdays {
+    background: #f0e7d7;
+  }
+
+  .calendar-body .merchant-weekdays span {
+    color: #53483f;
+  }
+
+  .calendar-body .merchant-day-number {
+    color: #241d18;
+  }
+
+  .calendar-body .merchant-day.has-events {
+    background: #edf0df;
+  }
+
+  .calendar-body .merchant-day.has-events .merchant-day-number {
+    color: #263d28;
+  }
+
+  .calendar-body .muted-day {
+    background: #eee5d5;
+  }
+
+  .calendar-body .muted-day .merchant-day-number {
+    color: #7d7063;
+  }
+
+  .calendar-body .merchant-day-chip {
+    min-height: 0.58rem;
+    border: 1px solid rgba(52, 76, 51, 0.32);
+    border-radius: 999px;
+    background: #6f7c53;
+    color: transparent;
+    padding: 0;
+  }
+}
+
+/* Deliberate dark palette for the calendar page. Explicit colors prevent mobile
+   browsers' automatic darkening from turning the month cells into blank squares. */
+@media (prefers-color-scheme: dark) {
+  .calendar-body {
+    color-scheme: dark;
+    color: #f6efe3;
+    background:
+      radial-gradient(circle at 20% 0%, rgba(111, 124, 83, 0.22), transparent 30rem),
+      linear-gradient(180deg, #20271f 0%, #181d18 100%);
+  }
+
+  .calendar-body h1,
+  .calendar-body h2,
+  .calendar-body h3,
+  .calendar-body .calendar-schedule-note strong {
+    color: #fffaf0;
+  }
+
+  .calendar-body .calendar-page-header p,
+  .calendar-body .calendar-schedule-note,
+  .calendar-body .calendar-status p,
+  .calendar-body .merchant-event-description {
+    color: #d8cfbf;
+  }
+
+  .calendar-body .calendar-schedule-note {
+    border-left-color: #9aaa75;
+    background: #293128;
+    box-shadow: none;
+  }
+
+  .calendar-body .calendar-status,
+  .calendar-body .merchant-calendar-surface,
+  .calendar-body .merchant-selected-event,
+  .calendar-body .merchant-event-card {
+    border-color: rgba(255, 250, 240, 0.16);
+    background: #252c24;
+    color: #f6efe3;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.24);
+  }
+
+  .calendar-body .merchant-selected-event {
+    background:
+      linear-gradient(145deg, rgba(111, 124, 83, 0.16), rgba(167, 96, 61, 0.13)),
+      #252c24;
+  }
+
+  .calendar-body .merchant-calendar-toolbar {
+    border-color: rgba(255, 250, 240, 0.14);
+    background:
+      linear-gradient(90deg, rgba(111, 124, 83, 0.15), rgba(167, 96, 61, 0.12)),
+      #2b332a;
+  }
+
+  .calendar-body .calendar-icon-button,
+  .calendar-body .calendar-text-button {
+    border-color: rgba(255, 250, 240, 0.2);
+    background: #384336;
+    color: #fffaf0;
+  }
+
+  .calendar-body .merchant-calendar-body {
+    background: rgba(255, 250, 240, 0.14);
+  }
+
+  .calendar-body .merchant-month,
+  .calendar-body .merchant-event-list {
+    background: #222922;
+  }
+
+  .calendar-body .merchant-weekdays {
+    border-color: rgba(255, 250, 240, 0.16);
+    background: #30392e;
+  }
+
+  .calendar-body .merchant-weekdays span {
+    color: #e1d8c9;
+  }
+
+  .calendar-body .merchant-day {
+    border-color: rgba(255, 250, 240, 0.13);
+    background: #262e25;
+  }
+
+  .calendar-body .merchant-day-number {
+    color: #fffaf0;
+  }
+
+  .calendar-body .merchant-day.has-events {
+    background: #303c2e;
+  }
+
+  .calendar-body .merchant-day.has-events .merchant-day-number {
+    color: #f5e8bd;
+  }
+
+  .calendar-body .muted-day {
+    background: #1e241e;
+  }
+
+  .calendar-body .muted-day .merchant-day-number {
+    color: #8f9489;
+  }
+
+  .calendar-body .merchant-day-chip {
+    border-color: rgba(255, 250, 240, 0.18);
+    background: #84935f;
+    color: #142014;
+  }
+
+  .calendar-body .merchant-day-chip:hover,
+  .calendar-body .merchant-day-chip:focus-visible,
+  .calendar-body .merchant-day-chip.active {
+    background: #d7bd8a;
+    color: #241d18;
+  }
+
+  .calendar-body .merchant-more-count,
+  .calendar-body .text-link {
+    color: #e0aa82;
+  }
+
+  .calendar-body .merchant-event-time,
+  .calendar-body .merchant-event-location {
+    color: #fffaf0;
+  }
+}
+
+
+/* Final mobile header state: keep the collapsed drawer completely out of the
+   interaction/paint flow, then attach it seamlessly below the sticky header. */
+@media (max-width: 900px) {
+  .site-menu {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-0.4rem);
+    visibility: hidden;
+    transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+  }
+
+  .site-menu.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@media (max-width: 560px) and (prefers-color-scheme: dark) {
+  .calendar-body .merchant-day-chip {
+    background: #9aaa75;
+    color: transparent;
+  }
+
+  .calendar-body .merchant-more-count {
+    font-size: 0;
+  }
+}
