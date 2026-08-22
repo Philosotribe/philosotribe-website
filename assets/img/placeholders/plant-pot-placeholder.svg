@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder plastic nursery pot illustration</title>
+  <desc id="desc">A simple black plastic nursery pot on a muted earthy background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5efe2"/>
+      <stop offset="1" stop-color="#d7bd8a"/>
+    </linearGradient>
+    <linearGradient id="pot" x1="0" x2="1">
+      <stop offset="0" stop-color="#302f2a"/>
+      <stop offset="0.5" stop-color="#47463f"/>
+      <stop offset="1" stop-color="#292923"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <path d="M0 705c171-64 323-71 472-22 146 48 278 44 425-8 113-40 214-31 303 18v207H0Z" fill="#6f7c53" opacity=".92"/>
+  <ellipse cx="600" cy="654" rx="305" ry="52" fill="#34281d" opacity=".22"/>
+  <path d="M372 298h456l-55 356H427Z" fill="url(#pot)"/>
+  <rect x="335" y="248" width="530" height="92" rx="38" fill="#24251f"/>
+  <rect x="362" y="268" width="476" height="46" rx="22" fill="#4d4b42"/>
+  <ellipse cx="600" cy="276" rx="216" ry="25" fill="#171813"/>
+  <path d="M430 654h70v36h-82Zm270 0h70l12 36h-82Z" fill="#24251f"/>
+  <rect x="493" y="400" width="214" height="146" rx="20" fill="#f5efe2" stroke="#d7bd8a" stroke-width="8"/>
+  <text x="600" y="456" text-anchor="middle" fill="#344c33" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">YOUR POT STICKER</text>
+  <text x="600" y="500" text-anchor="middle" fill="#a7603d" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">25¢ / 50¢ REBATE</text>
+  <text x="600" y="815" text-anchor="middle" fill="#34281d" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">PLACEHOLDER IMAGE</text>
+</svg>
