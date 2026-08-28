@@ -1028,6 +1028,42 @@ window.plantCareItems = [
   },
   {
     "label": "Flowers",
+    "lifeCycle": "Perennial",
+    "name": "Blanket Flower",
+    "description": "A tough prairie perennial with red-and-yellow daisy-like blooms, exceptionally well suited to sunny, dry Front Range gardens.",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Blanketflower_-_Gaillardia_aristata_IMG_6098---.jpg?width=960",
+    "imageAlt": "Blanket flower with a bold red-and-yellow bloom shown in a close square crop.",
+    "harvestLabel": "First bloom",
+    "harvestTime": "Established starters generally bloom during their first summer and can flower for weeks with light deadheading.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Space 12-18 inches apart in full sun. It is well adapted to Colorado conditions and performs best where drainage is fast."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun, including hot exposed locations."
+      },
+      {
+        "term": "Water",
+        "detail": "Water consistently only while establishing, then deeply and infrequently. Mature plants are highly drought tolerant."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Lean, sandy, gravelly, or average well-drained soil is best. Rich soil and fertilizer can shorten plant life and make stems floppy."
+      },
+      {
+        "term": "Flower care",
+        "detail": "Deadhead to extend bloom, or leave some seed heads for birds and self-sown replacements. Avoid hard late-fall cutting; spring cleanup is safer."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Blanket flower can be a short-lived perennial even when healthy. The most common failure is crown rot from excess moisture or poor winter drainage."
+      }
+    ]
+  },
+  {
+    "label": "Flowers",
     "lifeCycle": "Annual",
     "name": "Bowles Black Pansy",
     "description": "A dark-flowered pansy grown as a cool-season accent in beds and containers.",
@@ -1059,6 +1095,42 @@ window.plantCareItems = [
       {
         "term": "Watch for",
         "detail": "Aphids, slugs, crown rot in saturated soil, and reduced bloom during prolonged heat."
+      }
+    ]
+  },
+  {
+    "label": "Flowers",
+    "lifeCycle": "Perennial",
+    "name": "Butterfly Weed",
+    "description": "A drought-tolerant native milkweed with brilliant orange summer flower clusters that support monarchs and many other pollinators.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Asclepias_tuberosa,_2025-07-14.jpg/960px-Asclepias_tuberosa,_2025-07-14.jpg",
+    "imageAlt": "Butterfly weed plant blooming with dense bright orange flower clusters.",
+    "harvestLabel": "First bloom",
+    "harvestTime": "Plants may bloom the first year from a strong starter, but flowering improves as the deep root system matures.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Space 18-24 inches apart in full sun. Choose the permanent location carefully because butterfly weed develops a deep taproot and dislikes transplanting once established."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun is essential for compact growth and heavy flowering."
+      },
+      {
+        "term": "Water",
+        "detail": "Water regularly during the first season, then only during prolonged drought. Mature plants prefer dry conditions and are easily overwatered."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Lean, sandy or gravelly, sharply drained soil is ideal. Avoid rich fertilizer and wet heavy clay."
+      },
+      {
+        "term": "Flower care",
+        "detail": "Leave some seed pods if you want natural reseeding, or remove them before they open. Mark the planting spot because shoots emerge later in spring than many perennials."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Aphids may gather on new shoots and flower stems. Milkweed sap can irritate skin and the plant should not be eaten by people or pets."
       }
     ]
   },
@@ -1099,6 +1171,42 @@ window.plantCareItems = [
       {
         "term": "Watch for",
         "detail": "Dark petals can fade in intense sun as they age. Cut young blooms and avoid overhead watering."
+      }
+    ]
+  },
+  {
+    "label": "Flowers",
+    "lifeCycle": "Perennial",
+    "name": "Coneflower (Echinacea)",
+    "description": "Purple coneflower (Echinacea purpurea) is a sturdy pollinator perennial with pink-purple petals around a prominent orange-brown cone.",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Purple_Coneflower_(Echinacea_purpurea)-1.JPG?width=960",
+    "imageAlt": "Purple coneflower close-up with pink-purple petals and a large orange-brown cone.",
+    "harvestLabel": "First bloom",
+    "harvestTime": "Established starters may bloom the first summer; plants usually become fuller and bloom more heavily in later years.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Space 18-24 inches apart in spring or early fall. Set the crown level with the soil and water deeply while roots establish."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun gives the strongest stems and best flowering. Light afternoon shade is acceptable in very hot exposed sites."
+      },
+      {
+        "term": "Water",
+        "detail": "Keep evenly moist during the first season, then water deeply during extended dry spells. Mature plants tolerate moderate drought."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Average well-drained soil is ideal. Compost at planting is enough; excess fertilizer can create tall weak stems."
+      },
+      {
+        "term": "Flower care",
+        "detail": "Deadhead for a tidier look and possible repeat bloom, or leave late seed heads standing for birds and winter interest."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Overwatering, crown rot, Japanese beetles, and occasional aster yellows. Remove badly distorted plants rather than composting them if aster yellows is suspected."
       }
     ]
   },
@@ -1257,6 +1365,42 @@ window.plantCareItems = [
   {
     "label": "Flowers",
     "lifeCycle": "Annual",
+    "name": "Dwarf Bolero Marigold",
+    "description": "A compact French marigold with mahogany-red and golden-yellow bicolor blooms and a long warm-season flowering period.",
+    "image": "assets/img/plants/marigold.jpg",
+    "imageAlt": "Dwarf Bolero marigold with mahogany-red and golden-yellow bicolor flowers.",
+    "harvestLabel": "First bloom",
+    "harvestTime": "Usually 30-50 days after planting a small starter outdoors.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Plant after the danger of frost has passed, typically around mid-May only when the forecast and your site are safe. Space compact types 8-10 inches apart and larger types 12-18 inches apart."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun gives the strongest plants and heaviest bloom."
+      },
+      {
+        "term": "Water",
+        "detail": "Water deeply when the top inch dries. Let foliage dry before night and avoid keeping roots constantly wet."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Average, well-drained soil is sufficient. Too much fertilizer produces leafy plants with fewer flowers."
+      },
+      {
+        "term": "Flower care",
+        "detail": "Pinch or cut off spent flowers down to the next set of leaves. Regular deadheading keeps new buds forming."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Spider mites in hot dry weather, aphids on new growth, and flower rot after repeated overhead watering."
+      }
+    ]
+  },
+  {
+    "label": "Flowers",
+    "lifeCycle": "Annual",
     "name": "Eyeball Plant (Toothache Plant)",
     "description": "A tender annual with unusual yellow-and-red button flowers that resemble small eyes.",
     "image": "assets/img/plants/toothache-plant.jpg",
@@ -1372,6 +1516,42 @@ window.plantCareItems = [
   },
   {
     "label": "Flowers",
+    "lifeCycle": "Perennial",
+    "name": "Lupine",
+    "description": "A tall cool-climate perennial with palmate leaves and showy upright flower spikes; this guide uses large-leaved lupine (Lupinus polyphyllus).",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lupinus_polyphyllus_UA_2026_G3.jpg/960px-Lupinus_polyphyllus_UA_2026_G3.jpg",
+    "imageAlt": "Large-leaved lupines with tall purple-blue flower spikes and palmate leaves.",
+    "harvestLabel": "First bloom",
+    "harvestTime": "Flowering may begin the first or second season, with the heaviest display after plants are established.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Space about 18-24 inches apart in a cool, well-drained site. Lupines dislike root disturbance, so transplant carefully and avoid moving established plants."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun in cool conditions; afternoon shade is helpful on the Front Range where intense summer sun and reflected heat can shorten bloom."
+      },
+      {
+        "term": "Water",
+        "detail": "Keep moderately moist during establishment and bloom, but never waterlog the crown. Deep watering is better than frequent surface watering."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Loose, well-drained soil is essential. Lupines often struggle in very alkaline compacted Front Range clay, so use a raised or amended bed if drainage is poor."
+      },
+      {
+        "term": "Flower care",
+        "detail": "Remove spent spikes for neatness and to reduce self-seeding, or allow a few pods to mature if you want seedlings. Avoid high-nitrogen fertilizer."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Aphids, powdery mildew, root rot, and heat stress. Seeds and other plant parts are not edible and can be toxic if ingested."
+      }
+    ]
+  },
+  {
+    "label": "Flowers",
     "lifeCycle": "Annual",
     "name": "Marietta Marigold",
     "description": "A French marigold type with warm yellow and red patterned blooms.",
@@ -1407,42 +1587,6 @@ window.plantCareItems = [
       {
         "term": "Watch for",
         "detail": "Spider mites can show up in hot, dry weather. Rinse undersides of leaves and keep plants from drying hard."
-      }
-    ]
-  },
-  {
-    "label": "Flowers",
-    "lifeCycle": "Annual",
-    "name": "Dwarf Bolero Marigold",
-    "description": "A compact French marigold with mahogany-red and golden-yellow bicolor blooms and a long warm-season flowering period.",
-    "image": "assets/img/plants/marigold.jpg",
-    "imageAlt": "Dwarf Bolero marigold with mahogany-red and golden-yellow bicolor flowers.",
-    "harvestLabel": "First bloom",
-    "harvestTime": "Usually 30-50 days after planting a small starter outdoors.",
-    "careDetails": [
-      {
-        "term": "Planting",
-        "detail": "Plant after the danger of frost has passed, typically around mid-May only when the forecast and your site are safe. Space compact types 8-10 inches apart and larger types 12-18 inches apart."
-      },
-      {
-        "term": "Light",
-        "detail": "Full sun gives the strongest plants and heaviest bloom."
-      },
-      {
-        "term": "Water",
-        "detail": "Water deeply when the top inch dries. Let foliage dry before night and avoid keeping roots constantly wet."
-      },
-      {
-        "term": "Soil & feeding",
-        "detail": "Average, well-drained soil is sufficient. Too much fertilizer produces leafy plants with fewer flowers."
-      },
-      {
-        "term": "Flower care",
-        "detail": "Pinch or cut off spent flowers down to the next set of leaves. Regular deadheading keeps new buds forming."
-      },
-      {
-        "term": "Watch for",
-        "detail": "Spider mites in hot dry weather, aphids on new growth, and flower rot after repeated overhead watering."
       }
     ]
   },
@@ -2060,6 +2204,78 @@ window.plantCareItems = [
   },
   {
     "label": "Herbs",
+    "lifeCycle": "Perennial",
+    "name": "Chives",
+    "description": "A compact clumping onion relative with hollow edible leaves and round purple spring flowers.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Chives_(Allium_schoenoprasum)_flowers_opening._Chapeltoun_Estate,_North_Ayrshire.jpg/960px-Chives_(Allium_schoenoprasum)_flowers_opening._Chapeltoun_Estate,_North_Ayrshire.jpg",
+    "imageAlt": "Chive plants with green tubular leaves and opening round purple flower heads.",
+    "harvestLabel": "First harvest",
+    "harvestTime": "Begin light leaf harvest once the clump is established; mature clumps regrow quickly after cutting.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Space clumps 8-12 inches apart in spring. They also grow very well in containers and return reliably after winter dormancy."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun gives the strongest growth, though light afternoon shade is acceptable."
+      },
+      {
+        "term": "Water",
+        "detail": "Keep evenly moist for tender leaves, especially during active spring growth and in containers. Avoid constantly soggy soil."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Use fertile, well-drained soil with compost. A light spring feeding is enough for established clumps."
+      },
+      {
+        "term": "Harvest",
+        "detail": "Cut leaves 1-2 inches above the soil and allow them to regrow. The purple flowers are also edible; remove spent blooms if you want to limit seedlings."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Thrips and onion-family pests are occasional problems. Divide crowded clumps every 3-4 years to restore vigor."
+      }
+    ]
+  },
+  {
+    "label": "Herbs",
+    "lifeCycle": "Perennial",
+    "name": "Garlic Chives",
+    "description": "A clumping perennial allium with flat garlic-flavored leaves and starry white flower clusters in late summer.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Allium_tuberosum_09.jpg/960px-Allium_tuberosum_09.jpg",
+    "imageAlt": "Garlic chive plant with clusters of small white star-shaped flowers.",
+    "harvestLabel": "First harvest",
+    "harvestTime": "Light leaf harvest can begin after establishment; mature clumps produce repeatedly from spring into fall.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Space 10-14 inches apart in spring. Like regular chives, they are easy to grow in beds or containers and become larger clumps over time."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun is best, with light afternoon shade acceptable during the hottest part of summer."
+      },
+      {
+        "term": "Water",
+        "detail": "Water moderately and consistently for tender growth. Established clumps tolerate short dry periods but are more productive with steady moisture."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Use fertile, well-drained soil amended with compost. A light spring feeding supports fresh leaf growth."
+      },
+      {
+        "term": "Harvest",
+        "detail": "Cut flat leaves near the base as needed and let the clump regrow. Flower buds and white flowers are edible as well."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Garlic chives can self-seed heavily. Remove flower heads before seed matures if you do not want them spreading around the garden."
+      }
+    ]
+  },
+  {
+    "label": "Herbs",
     "lifeCycle": "Annual",
     "name": "Genovese Basil",
     "description": "A classic sweet basil for pesto, fresh cooking, and steady summer leaf harvests.",
@@ -2095,6 +2311,78 @@ window.plantCareItems = [
       {
         "term": "Watch for",
         "detail": "Cold nights, water stress, and flowering reduce quality. Water at the base and give airflow to reduce leaf disease."
+      }
+    ]
+  },
+  {
+    "label": "Herbs",
+    "lifeCycle": "Perennial",
+    "name": "Lavender",
+    "description": "English lavender (Lavandula angustifolia) is a fragrant woody perennial with narrow silver-green foliage and purple flower spikes.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Lavandula_angustifolia_june.jpg/960px-Lavandula_angustifolia_june.jpg",
+    "imageAlt": "English lavender plant covered with purple flower spikes.",
+    "harvestLabel": "First bloom",
+    "harvestTime": "Established starters often bloom in their first summer; stronger flowering usually develops from the second season onward.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Choose the sunniest, driest well-drained site available and space plants about 18-24 inches apart. Raised beds, slopes, or gravel-amended soil are safer than wet low spots."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun, ideally 6-8 or more hours daily. Strong sun keeps growth compact and improves flowering and fragrance."
+      },
+      {
+        "term": "Water",
+        "detail": "Water regularly only while roots establish, then water deeply and infrequently. Keep the crown dry and avoid frequent shallow watering."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Lean, sharply drained soil is best. Colorado alkaline soil is generally suitable; avoid rich compost, heavy clay that stays wet, and heavy fertilizer."
+      },
+      {
+        "term": "Pruning",
+        "detail": "Trim spent flower stems and lightly shape green growth after bloom. Do not cut deeply into old leafless wood, and avoid hard pruning late in fall."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Winter crown rot and cold damage are more common in wet soil than in dry cold. Provide excellent drainage and protect young plants from severe drying winter wind."
+      }
+    ]
+  },
+  {
+    "label": "Herbs",
+    "lifeCycle": "Perennial",
+    "name": "Lemon Balm",
+    "description": "A hardy lemon-scented mint relative with bright green leaves and small white flowers that are highly attractive to bees.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Die_Zitronenmelisse,_Melissa_officinalis_04.jpg/960px-Die_Zitronenmelisse,_Melissa_officinalis_04.jpg",
+    "imageAlt": "Flowering lemon balm with textured green leaves and small white flowers.",
+    "harvestLabel": "First harvest",
+    "harvestTime": "Begin light leaf harvest once plants are established; the strongest flavor is usually before heavy flowering.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Space 18-24 inches apart in spring. It becomes a broad clump and can self-seed freely, so a container or regularly edged bed is useful if you want it contained."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun to part shade. In hot exposed locations, afternoon shade keeps foliage softer and reduces midday wilting."
+      },
+      {
+        "term": "Water",
+        "detail": "Water regularly through establishment, then deeply when the upper soil dries. Established plants tolerate short dry periods but stay lush with moderate moisture."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Average well-drained garden soil is enough. Compost at planting is helpful, but heavy fertilizer is unnecessary and can make growth floppy."
+      },
+      {
+        "term": "Harvest",
+        "detail": "Snip young leaves and leafy stems as needed. Cut back after flowering for a fresh flush, and remove flower stalks before seed ripens if you do not want volunteers."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Lemon balm can spread aggressively by seed. Crowded or stressed plants may develop powdery mildew or spider mites during hot, dry weather."
       }
     ]
   },
@@ -2212,6 +2500,42 @@ window.plantCareItems = [
   },
   {
     "label": "Herbs",
+    "lifeCycle": "Perennial",
+    "name": "Skullcap",
+    "description": "A moisture-loving mint-family perennial with slender stems and small blue-violet flowers; this guide uses American skullcap (Scutellaria lateriflora).",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Scutellaria_lateriflora_-_Blue_Skullcap.jpg?width=960",
+    "imageAlt": "Blue skullcap with pale blue-violet flowers blooming along a green stem.",
+    "harvestLabel": "First harvest",
+    "harvestTime": "Light stem harvest once well established, usually around early flowering in the first full growing season.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Plant 12-18 inches apart in spring in a moisture-retentive bed. In the Colorado Springs area, give it a spot that stays cooler and moister than a typical xeric herb bed."
+      },
+      {
+        "term": "Light",
+        "detail": "Morning sun with afternoon shade is ideal. Full sun can work only where soil stays consistently moist; avoid a hot west-facing exposure."
+      },
+      {
+        "term": "Water",
+        "detail": "Keep soil evenly moist, especially during establishment and dry windy weather. Skullcap is much less drought tolerant than lavender, thyme, or other Mediterranean herbs."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Use rich, humus-heavy soil that holds moisture but still drains. A light compost mulch helps keep roots cool and reduces rapid evaporation."
+      },
+      {
+        "term": "Harvest",
+        "detail": "Once the plant is established, cut the upper leafy stems around early bloom. Leave at least one-third of the plant so it can recover and store energy for winter."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Dry soil can cause weak growth and spider-mite problems. Also watch for powdery mildew in crowded growth and winter desiccation in exposed beds."
+      }
+    ]
+  },
+  {
+    "label": "Herbs",
     "lifeCycle": "Annual",
     "name": "Slow Bolt Cilantro",
     "description": "A cilantro selection grown for flavorful leaves with better bolt resistance in warm weather.",
@@ -2247,6 +2571,42 @@ window.plantCareItems = [
       {
         "term": "Watch for",
         "detail": "Even slow-bolt cilantro flowers quickly in heat. Once it bolts, leaves decline; flowers help beneficial insects and seed can become coriander."
+      }
+    ]
+  },
+  {
+    "label": "Herbs",
+    "lifeCycle": "Perennial",
+    "name": "Thyme",
+    "description": "A low woody perennial herb with tiny aromatic leaves and masses of small pale flowers that attract pollinators.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Thymus_vulgaris_in_garden_(2018)_2.jpg/960px-Thymus_vulgaris_in_garden_(2018)_2.jpg",
+    "imageAlt": "Flowering common thyme growing as a low mound in a garden.",
+    "harvestLabel": "First harvest",
+    "harvestTime": "Begin light trimming after establishment; mature plants can be harvested repeatedly through the growing season.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Space about 10-14 inches apart in full sun with excellent drainage. It is especially well suited to raised beds, rock gardens, and containers."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun is best. Shade makes plants thin and less aromatic."
+      },
+      {
+        "term": "Water",
+        "detail": "Water regularly until rooted, then allow soil to dry well between deep waterings. Established thyme is drought tolerant."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Use lean, gritty, well-drained soil. Avoid rich fertilizer and wet organic soil, especially going into winter."
+      },
+      {
+        "term": "Harvest",
+        "detail": "Snip tender stem tips as needed, preferably before or at early flowering for strong flavor. Trim lightly after bloom to keep the plant compact."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Root rot is the main problem in heavy or wet soil. Older plants can become woody in the center and may need replacement or division every few years."
       }
     ]
   },
@@ -2391,6 +2751,42 @@ window.plantCareItems = [
       {
         "term": "Watch for",
         "detail": "Leaf miners, aphids, flea beetles, and hail damage. Remove heavily mined leaves and keep new growth coming with steady water."
+      }
+    ]
+  },
+  {
+    "label": "Leafy Greens",
+    "lifeCycle": "Perennial",
+    "name": "Sorrel",
+    "description": "A cool-season perennial leafy green with tender arrow-shaped leaves and a bright lemony, tart flavor.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rumex_acetosa_Szczaw_zwyczajny_2022-08-13_Stasz%C3%B3w_01.jpg/960px-Rumex_acetosa_Szczaw_zwyczajny_2022-08-13_Stasz%C3%B3w_01.jpg",
+    "imageAlt": "Common sorrel plant with a dense cluster of arrow-shaped green leaves.",
+    "harvestLabel": "First harvest",
+    "harvestTime": "Young leaves can be harvested lightly once plants are established; spring and fall give the best texture and flavor.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Space 12-18 inches apart in spring in fertile soil. Sorrel forms a persistent clump and returns early each year."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun in cool weather; afternoon shade helps keep leaves tender through Colorado summer heat."
+      },
+      {
+        "term": "Water",
+        "detail": "Keep soil evenly moist for the best leaf quality. Dry soil and heat quickly encourage flowering and tougher leaves."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Use fertile, well-drained soil with compost. A light spring feeding supports repeated leaf harvests."
+      },
+      {
+        "term": "Harvest",
+        "detail": "Pick the outer young leaves and leave the center growing. Cut flower stalks promptly if you want the plant focused on leaves rather than seed."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Slugs and leaf miners may damage foliage. Summer heat can cause bolting; trim flower stalks and keep roots cool with mulch."
       }
     ]
   },
@@ -2931,6 +3327,42 @@ window.plantCareItems = [
       {
         "term": "Watch for",
         "detail": "Containers dry fast. Check daily in heat and water until extra drains out the bottom of the pot."
+      }
+    ]
+  },
+  {
+    "label": "Trees",
+    "lifeCycle": "Perennial",
+    "name": "Honey Locust",
+    "description": "A fast-growing deciduous shade tree with airy compound foliage; seed-grown honey locusts may develop large branched thorns and seed pods.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Gleditsia_triacanthos_tree.jpg/960px-Gleditsia_triacanthos_tree.jpg",
+    "imageAlt": "Mature honey locust tree with an open spreading canopy and fine-textured green foliage.",
+    "harvestLabel": "Establishment",
+    "harvestTime": "Expect several years of structural growth before it functions as a substantial shade tree; mature trees can reach 30-70 feet or more.",
+    "careDetails": [
+      {
+        "term": "Planting",
+        "detail": "Plant in full sun with plenty of permanent space for a large tree. Keep it well away from foundations, overhead utilities, narrow paths, and places where future thorns would be hazardous."
+      },
+      {
+        "term": "Light",
+        "detail": "Full sun is best. Honey locust tolerates heat, wind, urban conditions, and reflected light once established."
+      },
+      {
+        "term": "Water",
+        "detail": "Water deeply and regularly for the first 2-3 years while the root system expands. Established trees tolerate drought but grow better with occasional deep irrigation during prolonged dry weather."
+      },
+      {
+        "term": "Soil & feeding",
+        "detail": "Adaptable to many Colorado soils, including alkaline conditions, as long as drainage is reasonable. Mulch broadly over the root zone but keep mulch several inches away from the trunk."
+      },
+      {
+        "term": "Pruning",
+        "detail": "Prune young trees to establish one strong central leader and well-spaced permanent branches. Remove crossing or damaged limbs while cuts are still small."
+      },
+      {
+        "term": "Watch for",
+        "detail": "Seed-grown honey locusts can develop formidable thorns and do not reliably inherit the thornless traits of landscape cultivars. Also watch for mimosa webworm, cankers, and storm damage."
       }
     ]
   }
